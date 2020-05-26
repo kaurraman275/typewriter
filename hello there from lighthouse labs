@@ -1,0 +1,8 @@
+const sentence = "hello there from lighthouse labs";
+for (const char of sentence) {
+setTimeout(() => {
+console.log(char);
+  // print the char here
+}, 1000) // <= 
+ 
+}
