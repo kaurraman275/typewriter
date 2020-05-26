@@ -1,0 +1,39 @@
+console.log('hello from spinner1.js... \rheyyy\n');
+
+  function spinnerup()
+   {
+   
+  process.stdout.write('\r|   ');
+}
+
+  
+  function spinnerright()
+  
+{
+
+process.stdout.write(' \r/   ');
+}
+function spinnerdown()
+{
+process.stdout.write('\r-   ');
+}
+function spinnerleft()
+{
+ process.stdout.write('\r\\   ');
+}
+
+setTimeout(() => {
+spinnerup();
+}, 100);
+setTimeout(() => {
+  spinnerright();
+}, 300);
+
+setTimeout(() => {
+ spinnerdown();
+}, 500);
+
+setTimeout(() => {
+  // Need to escape the backslash since it's a special character.
+  spinnerleft(); 
+}, 700);
